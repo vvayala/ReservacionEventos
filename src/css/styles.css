@@ -1,0 +1,30 @@
+:root {
+  --primary-color: rgb(183, 37, 6);
+  --seconday-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.img-logo {
+  width: 200px;
+  filter: brightness(10);
+}
+
+.active {
+  font-weight: 500;
+}
+
+.hero {
+  background-image: url("../assets/images/hero-event.png");
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
