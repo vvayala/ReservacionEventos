@@ -1,11 +1,11 @@
-import js from "@eslint/js";
-import globals from "globals";
-import prettier from "eslint-plugin-prettier";
-import prettierConfig from "eslint-config-prettier";
+import js from '@eslint/js';
+import globals from 'globals';
+import prettier from 'eslint-plugin-prettier';
+import prettierConfig from 'eslint-config-prettier';
 
 export default [
   {
-    files: ["**/*.{js,mjs,cjs}"],
+    files: ['**/*.{js,mjs,cjs}'],
     plugins: {
       js,
       prettier,
@@ -16,7 +16,6 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...prettierConfig.rules,
-      "prettier/prettier": "error",
     },
   },
 ];
